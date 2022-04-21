@@ -84,7 +84,7 @@
             <h5>Resources</h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-muted" href="publications.html">Publications</a></li>
-              <li><a class="text-muted" href="image-gallery.html">Glipmses</a></li>
+              <li><a class="text-muted" href="image-gallery.html">Glipmses< x/a></li>
             </ul>
           </div>
           <div class="col-4 col-md">
@@ -102,6 +102,7 @@
             get: (searchParams, prop) => searchParams.get(prop),
         });
         const description = descriptionArray.filter(d => d.url.includes(params.page));
+        document.title = description[0].title;
         const descriptionDiv = document.getElementById("description");
         description.forEach(element => {
             if(element.type === "TextBox") {

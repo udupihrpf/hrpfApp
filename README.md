@@ -2,15 +2,15 @@
 hrpf boottrap web App
 
 #toDos
-hrpf header ~2 hrs
-    - icon 20 min
 
-theme change 10 min    
+content 
+- imgae title
+- read more wale pages
+    - data 
 
-about us page, our work pages : 40 Mins 
+- file:///home/lucky/Code/hrpfApp/cause.html?page=Labour
+    - akku lila data, similar: Endosulphan Tragedy 
 
-Todo: come up with better heading :P 
 
-footer 20 min
-   - youtube icon
+page title 
 
