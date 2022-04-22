@@ -133,7 +133,16 @@
             const buttonDiv = document.getElementById("descriptionButton")
             description.forEach(element => {
                 if(element.type === "Button") {
-                    buttonDiv.innerHTML += '<a class="btn btn-primary mr-2"  href="' + element.data + '">' + element.data2 + "</a>"; 
+                  let href = '';
+                  if(!element.data.indexOf('udupihrpf.org') >= 0) 
+                  {
+                    href = element.data;
+                  }
+                  else 
+                  {
+                    href = 'file:///home/lucky/Code/hrpfApp/story-of-impact-detail.html?page=' + element.data.substr(element.data.lastIndexOf('/') + 1);
+                  }
+                  buttonDiv.innerHTML += '<a class="btn btn-primary mr-2"  href="' + href + '">' + element.data2 + "</a>"; 
                 }
             });
         }

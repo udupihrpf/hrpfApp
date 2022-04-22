@@ -102,7 +102,7 @@
         const params = new Proxy(new URLSearchParams(window.location.search), {
             get: (searchParams, prop) => searchParams.get(prop),
         });
-        const description = descriptionArray.filter(d => d.title == params.page);
+        const description = descriptionArray.filter(d => d.url.includes(params.page));
         document.title = description[0].title;
         // const descriptionDiv = document.getElementById("description");
         // description.forEach(element => {
@@ -134,7 +134,21 @@
             const buttonDiv = document.getElementById("descriptionButton")
             buttons.forEach(buttonRef => {
                 element = description.find(f => f.type == 'Button' &&  f.data == buttonRef)
-                buttonDiv.innerHTML += '<a class="btn btn-primary mr-2"  href="' + element.data + '">' + element.data2 + "</a>"; 
+                buttonHeading = '';
+                if(element.data.indexOf('drive.google') >= 0) {
+                  buttonHeading = 'Know More';
+                }
+                else if (element.data.indexOf('docs.google') >= 0) {
+                  buttonHeading = 'Read More';
+                }
+                else if (element.data.indexOf('youtu.be') >= 0 || element.data.indexOf('youtube.com') >= 0) {
+                  buttonHeading = 'Watch Video';
+                }
+                else {
+                  buttonHeading = 'Know More' 
+                } 
+
+                buttonDiv.innerHTML += '<a class="btn btn-primary mr-2"  href="' + element.data + '">' + buttonHeading + "</a>"; 
             });
         }
     </script>
