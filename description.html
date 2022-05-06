@@ -9,11 +9,7 @@
   <link rel="icon" href="favicon.ico">
 
   <title>HRPF Diary</title>
-
-  <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
   <link href="album.css" rel="stylesheet">
 </head>
 
@@ -21,15 +17,16 @@
   <main role="main">
     <div class="album py-5 bg-light">
       <div class="container">
-        <div id="description" class="row  mt-5"></div>
+        <div id="descHeading" class="row mt-5"></div>
+        <div id="description" class="row  mt-3"></div>
         <div id="imgHeading" class="row mt-5"></div>
         <div id="descriptionImg" class="row mt-3"></div>
         <div id="descriptionButton" class="row"></div>
       </div>
     </div>
-  </main>  
+  </main>
   <script>
-    const csvData = a = httpGet('https://gsx2json.com/api?id=1YW6eK2CWP0YYIOAhaQmpAwfm1WogavCoTHS-8oqYvQQ&sheet=Sheet1');
+    const csvData = httpGet('https://gsx2json.com/api?id=1lpcle98aFagJLJfAKza21MOSzHpzuJ9N1Z1RS69rdaM&sheet=Sheet1');
     const descriptionArray = JSON.parse(csvData).rows;
     const params = new Proxy(new URLSearchParams(window.location.search), {
       get: (searchParams, prop) => searchParams.get(prop),
@@ -40,10 +37,10 @@
     );
     document.title = description[0].title;
     const descriptionDiv = document.getElementById("description");
+    descHeading.innerHTML += `<h3>Stroy of ${description[0].title}</h3>`;
     description.forEach(element => {
       if (element.type === "TextBox") {
         descriptionDiv.innerHTML += element.data;
-        // descriptionDiv.innerHTML += element.data2;  
       }
     });
     if (description.filter(o => o.type === 'Img').length !== 0) {
