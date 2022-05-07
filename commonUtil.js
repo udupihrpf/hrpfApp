@@ -1,8 +1,10 @@
 const header = `
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand">HRPF</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#930606;">
+      <a href="/">
+      <img src="https://scontent.fblr24-1.fna.fbcdn.net/v/t1.18169-9/1016653_486159911472626_1994311130_n.png?_nc_cat=101&amp;ccb=1-6&amp;_nc_sid=09cbfe&amp;_nc_ohc=pjHyPBprH-wAX919NLY&amp;_nc_ht=scontent.fblr24-1.fna&amp;oh=00_AT_MkPOt1FE6W4sEPNCYaWhmw2MagEIeowUNNoEPKQOKOQ&amp;oe=629D62DE" weight="50px" class="navbar-brand" style="background: #930606" height="50px">
+      </a>
+      <button class="navbar-toggler mr-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,8 +45,8 @@ const footer = `
 <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-4 col-md">
-        <h5 class="ml-5">Our Work</h5>
-        <ul class="ml-5 list-unstyled text-small">
+        <h5 class="ml-3">Our Work</h5>
+        <ul class="ml-3 list-unstyled text-small">
           <li><a class="text-muted" href="cause.html?page=Human Rights">Human Rights</a></li>
           <li><a class="text-muted" href="cause.html?page=Human Trafficking">Human Traffiking</a></li>
           <li><a class="text-muted" href="cause.html?page=Labour">Labour</a></li>

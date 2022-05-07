@@ -29,7 +29,7 @@
     </div>
   </main>
   <script>
-    const csvData = httpGet('https://gsx2json.com/api?id=1lpcle98aFagJLJfAKza21MOSzHpzuJ9N1Z1RS69rdaM&sheet=Sheet2');
+    const csvData = httpGet('https://gsx2json.com/api?id=1lpcle98aFagJLJfAKza21MOSzHpzuJ9N1Z1RS69rdaM&sheet=Sheet3');
     const descriptionArray = JSON.parse(csvData).rows;
     const params = new Proxy(new URLSearchParams(window.location.search), {
       get: (searchParams, prop) => searchParams.get(prop),
