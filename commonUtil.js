@@ -1,6 +1,6 @@
 const header = `
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#f73b3b;">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#b54444;">
       <a href="https://lucky-rathore.github.io/hrpfApp/">
       <img src="assets/img/hrpf-logo.jpeg" width="50px" height="50px">
       </a>
