@@ -1,7 +1,8 @@
 # hrpfApp
-hrpf boottrap web App
 
-#toDos
-- imgae title
-- content text
-- work with us: google form 
+
+ToDos
+
+- gilmpse page 
+
+- favicon in all page 

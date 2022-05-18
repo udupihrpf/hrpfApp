@@ -1,7 +1,7 @@
 const header = `
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#b54444;">
-      <a href="https://lucky-rathore.github.io/hrpfApp/">
+      <a href="/">
       <img src="assets/img/hrpf-logo.jpeg" width="50px" height="50px">
       </a>
       <button class="navbar-toggler mr-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
