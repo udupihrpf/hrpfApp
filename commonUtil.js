@@ -11,7 +11,7 @@ const header = `
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">          
           <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="example.com" id="dropdown01" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Our Work<span class="sr-only">(current)</span></a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="cause.html?page=Human Rights">Human Rights</a>
